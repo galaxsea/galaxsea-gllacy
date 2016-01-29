@@ -1,0 +1,13 @@
+body {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: 'Roboto Bold', Arial, sans-serif;
+  /* Для лучшей видимости */
+  background: #849d8f;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
