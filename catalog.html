@@ -7,10 +7,12 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <a href="#"><img src="img/gllacy-index/logo.svg" width="154" height="64" alt="Магазин Глейси"></a>
+      <div class="container clearfix">
         <nav class="main-menu">
           <ul>
+            <li>
+              <a href="#"><img src="img/gllacy-index/logo.svg" width="154" height="64" alt="Магазин Глейси"></a>
+            </li>
             <li>
               <a href="#">Каталог</a>
             </li>
@@ -22,64 +24,66 @@
             </li>
           </ul>
         </nav>
-        <div class="search">
-          <a href="#">Поиск</a>
-        </div>
-        <div class="user-block">
-          <a class="login" href="#">Вход</a>
-          <a class="cart" href="#">Пусто</a>
-        </div>
-        <div class="contacts">
-          <span class="schedule">С 10 до 20, ежедневно</span>
-          <span class="tel">8 812 450-25-25</span>
+        <div class="right-column">
+          <div class="search">
+            <a href="#">Поиск</a>
+          </div>
+          <div class="user-block">
+            <a class="login" href="#">Вход</a>
+            <a class="cart" href="#">Пусто</a>
+          </div>
+          <div class="contacts">
+            <span class="schedule">С 10 до 20, ежедневно</span>
+            <span class="tel">8 812 450-25-25</span>
+          </div>
         </div>
       </div>
     </header>
-    <main class="container">
-      <header class="page-header">
-        <ul class="breadcrumbs">
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Сливочное</a>
-          </li>
-        </ul>
+    <main class="container clearfix">
+      <ul class="breadcrumbs">
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Сливочное</a>
+        </li>
+      </ul>
+      <div class="page-title">
         <h2>Сливочное мороженое</h2>
-      </header>
+      </div>
       <div class="filters">
         <form action="#" method="get" name="filters">
-          <section class="filters-sorting">
-            <span class="filters-title">Сортировка:</span>
+          <fieldset class="filters-sorting">
+            <legend class="filters-title">Сортировка:</legend>
             <select name="sorting">
               <option value="popularity">по популярности</option>
               <option value="unexpensive-first">сначала недорогие</option>
               <option value="expensive-first">сначала дорогие</option>
               <option value="fatness">по жирности</option>
             </select>
-          </section>
-          <section class="filters-price">
-            <span class="filters-title">Цена: 100 руб. — 500 руб.</span>
-            <input type="range" name="price" min="" max="" step="">
-          </section>
-          <section class="filters-fatness">
-            <span class="filters-title">Жирность:</span>
+          </fieldset>
+          <fieldset class="filters-price">
+            <legend class="filters-title">Цена: 100 руб. — 500 руб.</legend>
+            <input type="range" name="filters-price" min="" max="" step="">
+          </fieldset>
+          <fieldset class="filters-fatness">
+            <legend class="filters-title">Жирность:</legend>
             <label><input type="radio" name="fatness" value="0%"> 0%</label>
             <label><input type="radio" name="fatness" value="10%"> до 10%</label>
             <label><input type="radio" name="fatness" value=">30%"> до 30%</label>
             <label><input type="radio" name="fatness" value="<30%"> выше 30%</label>
-          </section>
-          <section class="filters-fillers">
-            <span class="filters-title">Наполнители:</span>
-            <label><input type="checkbox" name="fillers"> шоколадные</label>
-            <label><input type="checkbox" name="fillers"> сахарные присыпки</label>
-            <label><input type="checkbox" name="fillers"> фрукты</label>
-            <label><input type="checkbox" name="fillers"> сиропы</label>
-            <label><input type="checkbox" name="fillers"> джемы</label>
-          </section>
+          </fieldset>
+          <fieldset class="filters-fillers">
+            <legend class="filters-title">Наполнители:</legend>
+            <label><input type="checkbox" name="fillers-chocolate"> шоколадные</label>
+            <label><input type="checkbox" name="fillers-sugar"> сахарные присыпки</label>
+            <label><input type="checkbox" name="fillers-fruit"> фрукты</label>
+            <label><input type="checkbox" name="fillers-syrup"> сиропы</label>
+            <label><input type="checkbox" name="fillers-jam"> джемы</label>
+          </fieldset>
           <button type="submit" name="filters-show" class="button">Показать</button>
         </form>
       </div>
@@ -158,7 +162,7 @@
       </ul>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
