@@ -21,6 +21,12 @@ body {
 
 /* Header */
 
+.logo {
+  float: left;
+  width: 154px;
+  margin-right: 15px;
+}
+
 .main-menu {
   float: left;
   width: 560px;
